@@ -15,7 +15,7 @@ Set environment variable `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_
 $ direnv edit . # direnv is not required
 export AWS_ACCESS_KEY_ID=AKIAXXXXXXXXXXXXXXXXXX
 export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
-export AWS_REGION=ap-northeast-1
+export AWS_REGION=us-east-1
 ```
 
 Modify S3 bucket settings for remote state on `terraform.tf`.
