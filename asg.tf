@@ -32,7 +32,7 @@ resource "aws_autoscaling_group" "eks_worker_node_asg" {
       propagate_at_launch = true
     },
     {
-      key                 = "kubernetes.io/cluster/${var.stage}-app-cluster"
+      key                 = "kubernetes.io/cluster/${var.stage}-app"
       value               = "owned"
       propagate_at_launch = true
     }
