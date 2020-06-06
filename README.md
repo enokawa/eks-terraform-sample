@@ -24,7 +24,7 @@ Modify S3 bucket settings for remote state on `terraform.tf`.
 terraform {
   required_version = "0.12.26"
   backend "s3" {
-    bucket = "my-awesome-app-tfstate" # 
+    bucket = "my-awesome-app-tfstate" # Enter your bucket name
     key    = "us-east-1/dev/terraform.tfstate"
     region = "us-east-1"
   }
