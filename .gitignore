@@ -1,0 +1,4 @@
+.env
+.envrc
+.terraform/
+aws-auth-cm.yaml
