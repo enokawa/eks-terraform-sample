@@ -11,7 +11,7 @@ Terraform sample code to create Amazon EKS.
 
 Set environment variable `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_DEFAULT_REGION`.
 
-```shell
+```sh
 $ direnv edit . # direnv is not required
 export AWS_ACCESS_KEY_ID=AKIAXXXXXXXXXXXXXXXXXX
 export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
@@ -42,21 +42,21 @@ variable "eks_public_access_cidrs" {
 
 Install Terraform binary use tfenv and execute `terraform init`.
 
-```shell
+```sh
 $ tfenv install
 $ terraform init
 ```
 
 ## Apply
 
-```shell
+```sh
 $ terraform plan
 $ terraform apply
 ```
 
 ## Update kubeconfig
 
-```shell
+```sh
 $ aws eks update-kubeconfig --name dev-app
 ```
 
@@ -68,6 +68,6 @@ See document bellow:
 
 ## Destroy
 
-```shell
+```sh
 $ terraform destroy
 ```
