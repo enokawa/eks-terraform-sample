@@ -6,7 +6,7 @@ data "template_file" "user_data" {
 }
 
 data "aws_ssm_parameter" "eks_optimized_ami_id" {
-  name = "/aws/service/eks/optimized-ami/1.16/amazon-linux-2/recommended/image_id"
+  name = "/aws/service/eks/optimized-ami/1.17/amazon-linux-2/recommended/image_id"
 }
 
 resource "aws_launch_template" "eks_worker_node_template" {

@@ -1,7 +1,7 @@
 resource "aws_eks_cluster" "app" {
   name     = "${var.stage}-app"
   role_arn = aws_iam_role.eks_cluster.arn
-  version  = "1.16"
+  version  = "1.17"
 
   vpc_config {
     endpoint_public_access  = true
