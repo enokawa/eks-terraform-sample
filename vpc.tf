@@ -36,6 +36,7 @@ resource "aws_subnet" "public_b" {
     Name                                     = "${var.stage}-public-b"
     Environment                              = var.stage
     "kubernetes.io/cluster/${var.stage}-app" = "shared"
+    "kubernetes.io/role/elb"                 = 1
   }
 }
 
@@ -49,6 +50,7 @@ resource "aws_subnet" "public_c" {
     Name                                     = "${var.stage}-public-c"
     Environment                              = var.stage
     "kubernetes.io/cluster/${var.stage}-app" = "shared"
+    "kubernetes.io/role/elb"                 = 1
   }
 }
 
