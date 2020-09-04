@@ -15,7 +15,7 @@ resource "aws_eks_cluster" "app" {
       aws_subnet.public_c.id,
       aws_subnet.app_a.id,
       aws_subnet.app_b.id,
-      aws_subnet.app_b.id
+      aws_subnet.app_c.id
     ]
   }
 
